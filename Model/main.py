@@ -1,7 +1,7 @@
 import tkinter
-import App
+from App import App
 
 
 if __name__ == "__main__":
-    app = App.App()
+    app = App()
     app.mainloop()
