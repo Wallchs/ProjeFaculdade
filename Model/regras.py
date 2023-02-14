@@ -1,8 +1,9 @@
-class Usuarios(self):
-    self.nome = nome
-    self.rg = rg
-    self.cpf = cpf
-    self.idade = idade
+class Usuarios:
+    def __init(self)__:
+        self.nome = nome
+        self.rg = rg
+        self.cpf = cpf
+        self.idade = idade
 
 
     def validaUsuarios(self):
