@@ -1,17 +1,21 @@
-import tkinter
-import customtkinter
+import webview
 
-customtkinter.set_appearance_mode("System")  # Modes: system (default), light, dark
-customtkinter.set_default_color_theme("blue")  # Themes: blue (default), dark-blue, green
+html = """
 
-app = customtkinter.CTk()  # create CTk window like you do with the Tk window
-app.geometry("400x240")
 
-def button_function():
-    print("button pressed")
+<html>
+    <head>
+        <body>
+            <h1>
+                Testando
+            </h1>
+        </body>
+    </head>
+</html>
 
-# Use CTkButton instead of tkinter Button
-button = customtkinter.CTkButton(master=app, text="CTkButton", command=button_function)
-button.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
 
-app.mainloop()
+"""
+
+
+window = webview.create_window('Main', html=html)
+webview.start()
